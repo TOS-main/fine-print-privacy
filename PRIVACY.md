@@ -1,6 +1,6 @@
 # Fine Print — Privacy Policy
 
-**Last updated:** 13 September 2026
+**Last updated:** 14 September 2026
 
 This policy covers the Fine Print browser extension.
 
@@ -17,6 +17,8 @@ written to be read, not to cover anyone legally.
 - **Your browsing history is never sent anywhere.** The grades and site names
   it remembers are stored on your machine and are never uploaded.
 - **It never reads what you type.** Not into forms, not anywhere.
+- With Pro switched on, it can **untick marketing boxes a site pre-ticked for
+  you**. It only ever unticks, never ticks, and never submits a form.
 - The **only** thing that leaves your computer is a licence check, and only if
   you have bought Pro: your Google account id, your email address, and your
   licence key, roughly once a week.
@@ -78,6 +80,33 @@ had pre-ticked.
 
 Nothing about which banners it handled is sent anywhere. The count is kept
 locally so the free daily allowance works.
+
+---
+
+## Unticking pre-ticked boxes (Pro)
+
+If you switch this on, Fine Print looks for checkboxes that a signup or
+checkout page had **already ticked for you** — mailing lists, "share with
+partners", auto-renewal — and unticks them.
+
+The rules it follows, all of them enforced in the code:
+
+- **It only ever unticks.** It never ticks a box, and never submits a form.
+- **It only touches boxes that were ticked before you arrived.** Anything you
+  tick yourself is left exactly as you left it.
+- **It leaves required consent alone.** Terms of service, privacy policy
+  acknowledgement, age confirmation and similar are recognised and skipped —
+  unticking those would quietly break your signup.
+- **It tells you what it did.** Silent edits to a page you are filling in
+  would be indistinguishable from something malicious.
+
+To decide whether a box is marketing, it reads the checkbox's own label,
+name, id and `value` — all of which are written by the website, not by you.
+It does not read text boxes, and there is nothing typed into a checkbox to
+read. Nothing about which boxes were unticked leaves your computer; only a
+running count is kept locally.
+
+It is **off by default** and only available with Pro.
 
 ---
 

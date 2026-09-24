@@ -1,4 +1,4 @@
-Fine Print Guard — Instant Terms of Service & Privacy Scanner Last updated: 23 September 2026
+Fine Print Guard — Instant Terms of Service & Privacy Scanner Last updated: 24 September 2026
 
 This policy covers the Fine Print browser extension.
 
@@ -44,9 +44,9 @@ It is off by default, and inactive in this release.
 
 Blocking pop-up windows Fine Print stops windows and tabs a page opens that you did not ask for: the ad tab that appears when you click anywhere, the one that slides in behind your window as you leave, the one that fires off a timer.
 
-To do that it has to replace window.open inside the page's own JavaScript, which is the only part of Fine Print that runs there. It looks at one thing: whether you clicked something in the last second. If you did, the window opens which is how sign-in and card-verification windows keep working.
+To do that it has to replace window.open inside the page's own JavaScript, which is the only part of Fine Print that runs there. It looks at one thing: whether you clicked something in the last two seconds (you can change this in Settings). If you did, the window opens which is how sign-in and card-verification windows keep working.
 
-It does not read the page, and it does not record where the blocked window was going beyond showing you, once, so you can open it anyway if it was one you wanted.
+It does not read the page, and it does not record where the blocked window was going beyond showing you so you can open it anyway if it was one you wanted. That address is kept on your computer only until you leave the page, so the extension's popup can still offer to open it after the on-page message has gone. It is never sent anywhere.
 
 Checking an extension before you install it When you are looking at an extension's Chrome Web Store page or paste its link into Fine Print it fetches that public listing and shows what the developer has declared about your data, before you decide.
 
@@ -54,7 +54,7 @@ The request goes to Google's Chrome Web Store and to the developer's own site if
 
 If you choose to watch an extension, Fine Print re-checks that same public listing once a day and tells you if what it declares has changed. The list of extensions you watch is stored on your computer.
 
-Usage statistics Fine Print Guard uses Google Analytics to find and fix problems with the extension. What it sends is anonymous: a random ID created by the extension (not your Google account, name or email), which features and settings are used, installs and updates, daily totals of what the extension blocked, and problem reports you choose to send (which can include the name of the one site you are reporting and a short note you write). It never sends which sites you visit, what you type, page content, or grades. It is on by default. You can turn it off at any time in Settings, under Usage stats & help, and it is always off in local-only mode and when a school district manages the extension. Google processes this data under Google's own privacy policy.
+Usage statistics Fine Print Guard uses Google Analytics to find and fix problems with the extension. What it sends is anonymous: a random ID created by the extension (not your Google account, name or email), which features and settings are used, installs and updates, daily totals of what the extension blocked, and problem reports you choose to send (which can include the name of the one site you are reporting and a short note you write). It also sends feedback you choose to send with the Feedback button: which kind it is (for example "I have an idea") and a short note, if you write one. It never sends which sites you visit, what you type (other than a note you choose to write in a report or feedback), page content, or grades. It is on by default. You can turn it off at any time in Settings, under Usage stats & help, and it is always off in local-only mode and when a school district manages the extension. Google processes this data under Google's own privacy policy.
 
 Sharing Your data is not sold, rented, or traded. It is not shared with advertisers or data brokers. There are no third-party SDKs in this extension; anonymous usage statistics are sent to Google Analytics directly, as described under Usage statistics.
 
